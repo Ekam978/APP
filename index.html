@@ -13,7 +13,7 @@
 
     <script>
         function get_data() {
-            fetch('http://newsapi.org/v2/everything?q=climate&sortBy=publishedAt&apiKey=f4a7cc07790747a88ad8519c05a8e531')
+            fetch('https://newsapi.org/v2/everything?q=climate&sortBy=publishedAt&apiKey=f4a7cc07790747a88ad8519c05a8e531')
             .then(a => a.json())
             .then(response => {
                 for (i =0 ; i<response.articles.length ; i++){
